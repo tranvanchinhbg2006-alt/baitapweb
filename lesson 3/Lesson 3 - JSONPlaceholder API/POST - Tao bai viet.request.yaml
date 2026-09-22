@@ -1,0 +1,14 @@
+$kind: http-request
+url: https://jsonplaceholder.typicode.com/posts
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: text
+  content: |-
+    {
+      "title": "Bai tap Cong nghe Web",
+      "body": "Sinh vien thuc hanh Postman",
+      "userId": 1
+    }
+order: 2000
