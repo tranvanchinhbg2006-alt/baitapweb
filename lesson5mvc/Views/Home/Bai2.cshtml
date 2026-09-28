@@ -1,0 +1,27 @@
+@model List<Product>
+
+@{
+    ViewData["Title"] = "Bai 2";
+}
+
+<h1>Bai 2 - Danh sach san pham</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ten san pham</th>
+            <th>Gia</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td class="price">@product.Price.ToString("N0") VND</td>
+            </tr>
+        }
+    </tbody>
+</table>
