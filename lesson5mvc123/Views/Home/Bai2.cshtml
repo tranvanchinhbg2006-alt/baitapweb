@@ -1,0 +1,29 @@
+@model List<CongNgheLapTrinhWeb_Bai1_Bai2.Models.Product>
+
+@{
+    ViewData["Title"] = "Bai 2 - Danh sach san pham";
+}
+
+<div style="max-width: 900px; margin: 40px auto; font-family: Arial, sans-serif;">
+    <h1 style="text-align: center; margin-bottom: 25px;">Danh sach san pham</h1>
+
+    <table style="width: 100%; border-collapse: collapse; background: white;">
+        <thead>
+            <tr style="background: #2563eb; color: white;">
+                <th style="padding: 14px; border: 1px solid #ddd;">ID</th>
+                <th style="padding: 14px; border: 1px solid #ddd;">Ten san pham</th>
+                <th style="padding: 14px; border: 1px solid #ddd;">Gia</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td style="padding: 12px; text-align: center; border: 1px solid #ddd;">@product.Id</td>
+                    <td style="padding: 12px; border: 1px solid #ddd;">@product.Name</td>
+                    <td style="padding: 12px; text-align: right; border: 1px solid #ddd;">@product.Price.ToString("N0") VND</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

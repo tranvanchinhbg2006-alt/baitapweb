@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bài tập Web</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f8;
+            color: #222;
+        }
+        nav {
+            background: #1f2937;
+            padding: 15px 30px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 25px;
+            font-weight: bold;
+        }
+        nav a:hover { color: #60a5fa; }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,.08);
+        }
+        h1 { color: #1f2937; }
+        .result {
+            padding: 18px;
+            background: #eef6ff;
+            border-left: 5px solid #2563eb;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #1f2937;
+            color: white;
+        }
+        tr:nth-child(even) { background: #f8fafc; }
+        .price { font-weight: bold; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/">Trang chu</a>
+        <a href="/Home/Bai1">Bai 1</a>
+        <a href="/Home/Bai2">Bai 2</a>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "zgROu0DGMSs=",
+  "success": true,
+  "projectFilePath": "D:\\baitaplaptrinhweb\\lesson5mvc123\\CongNgheLapTrinhWeb_Bai1_Bai2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tranv\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\tranv\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\tranv\\.nuget\\packages\\npgsql\\8.0.6\\npgsql.8.0.6.nupkg.sha512"
+  ],
+  "logs": []
+}
